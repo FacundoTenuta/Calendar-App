@@ -22,7 +22,7 @@ describe('Pruebas en el helper Fetch', () => {
         
         localStorage.setItem("token", token );
 
-        const resp = await fetchConToken("events/5f4ed29a5c7a0153100c2732", {}, "DELETE");
+        const resp = await fetchConToken("", {}, "DELETE");
         const body = await resp.json();
 
         expect( body ).toEqual({
